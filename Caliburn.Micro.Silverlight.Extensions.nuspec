@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Caliburn.Micro.Silverlight.Extensions</id>
+    <version>$version$</version>
+    <title>Silverlight Navigation Extensions for Caliburn.Micro</title>
+    <authors>Rob Eisenberg</authors>
+    <owners>Chui Tey</owners>
+    <licenseUrl>http://caliburnmicro.codeplex.com/license</licenseUrl>
+    <projectUrl>http://github.com/teyc/caliburn.micro.silverlight.extensions</projectUrl>
+    <iconUrl>http://www.caliburnproject.org/CaliburnIcon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extends Caliburn.Micro to integrate with Silverlight's Navigation Framework.</description>
+    <releaseNotes>This is an alpha release based off Caliburn.Micro.WP8.Extensions.</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>MVVM Navigation Silverlight SL5</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Controls.Navigation" targetFramework="Silverlight5.0" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
