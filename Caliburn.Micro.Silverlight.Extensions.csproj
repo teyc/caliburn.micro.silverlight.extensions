@@ -66,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LinqExtensions.cs" />
+    <Content Include="NavigationBootstrapperSample.cs.pp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="NavigationExtensions.cs" />
     <Compile Include="UriBuilder.cs" />
     <Compile Include="INavigationService.cs" />
