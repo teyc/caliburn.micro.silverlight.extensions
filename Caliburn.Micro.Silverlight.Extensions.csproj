@@ -65,6 +65,7 @@
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinqExtensions.cs" />
     <Compile Include="NavigationExtensions.cs" />
     <Compile Include="UriBuilder.cs" />
     <Compile Include="INavigationService.cs" />
