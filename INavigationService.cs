@@ -172,10 +172,25 @@
 
             ViewLocator.InitializeComponent(e.Content);
 
-            var viewModel = ViewModelLocator.LocateForView(e.Content);
-            if (viewModel == null) {
+            // Do not use LocateForView because Frame control already has its
+            // parent's DataContext. Use LocateForViewType instead.
+            var viewModel = ViewModelLocator.LocateForViewType(e.Content.GetType());
+
+            //var viewModel = ViewModelLocator.LocateForView(e.Content);
+            if (viewModel == null)
+            {
+                if (System.Diagnostics.Debugger.IsAttached)
+                {
+                    var msg = "'" + e.Content.GetType().FullName + "' must be registered in the bootstrapper (or INavigationService might never get injected)";
+                    var exc = new InvalidOperationException(msg);
+                    LogManager.GetLog(typeof(FrameAdapter)).Error(exc);
+                    throw exc;
+                }
                 return;
             }
+
+            // Inject dependency properties
+            IoC.BuildUp(viewModel);
 
 #if WINDOWS_PHONE
             var page = e.Content as PhoneApplicationPage;
