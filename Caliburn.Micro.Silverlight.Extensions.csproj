@@ -29,14 +29,14 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\Silverlight\Debug\</OutputPath>
+    <OutputPath>..\..\bin\SL5\</OutputPath>
     <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
     <NoStdLib>true</NoStdLib>
     <NoConfig>true</NoConfig>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>..\..\bin\Silverlight\Debug\Caliburn.Micro.Silverlight.Extensions.XML</DocumentationFile>
+    <DocumentationFile>..\..\bin\SL5\Caliburn.Micro.Silverlight.Extensions.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -48,7 +48,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>..\..\Bin\SL5\Caliburn.Micro.Silverlight.Extensions.xml</DocumentationFile>
+    <DocumentationFile>..\..\bin\SL5\Caliburn.Micro.Silverlight.Extensions.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
