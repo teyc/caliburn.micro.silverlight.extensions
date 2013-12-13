@@ -17,5 +17,8 @@
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Windows.Controls.Navigation" targetFramework="Silverlight5.0" />
     </frameworkAssemblies>
+    <dependencies>
+        <dependency id="Caliburn.Micro" version="1.5.2" />
+    </dependencies>
   </metadata>
 </package>
